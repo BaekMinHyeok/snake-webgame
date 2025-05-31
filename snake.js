@@ -2,7 +2,7 @@ const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 const box = 20;
 let snake = [{ x: 9 * box, y: 10 * box }];
-let direction = null;
+let direction = 'RIGHT'; // 기본 방향을 오른쪽으로 설정
 let food = {
   x: Math.floor(Math.random() * 20) * box,
   y: Math.floor(Math.random() * 20) * box
